@@ -1,0 +1,53 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.quotes_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.quote-container {
+    width: calc(100% / 3);
+    min-height: 22rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    flex-basis: 33%;
+    overflow:hidden;
+}
+.img-tag{
+    background: url(http://www.daba.in.rs/tf/hallie_wordpress/wp-content/uploads/2017/07/Flute_player-960x960.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform .5s;
+    z-index:-1;
+}
+.quote-container:hover .img-tag{
+
+transform: scale(1.2);
+
+}
+.quote-d{
+   font-size: 30px;
+    color: #fff;
+ 
+}
+.quote-author {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 2rem;
+    font-style: italic;
+}
